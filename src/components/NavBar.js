@@ -19,7 +19,7 @@ export default function Header(props) {
 
   return (
     <nav className="header-container">
-      <Link to="/" spy={true} smooth={true} offset={-200} duration={200}>
+      <Link to="homepage" spy={true} smooth={true} offset={-200} duration={200}>
         <img
           className="header-logo"
           src="../images/ca_photography.png"
@@ -40,7 +40,7 @@ export default function Header(props) {
           PORTFOLIO
         </Link>
         <Link
-          to="contact"
+          to="contactz"
           spy={true}
           smooth={true}
           offset={-100}

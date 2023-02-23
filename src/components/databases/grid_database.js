@@ -63,7 +63,7 @@ const grid_database = [
     id: "10",
     type: "portrait",
     path: "../images/QTY_1937.jpg",
-    delay: 10,
+    delay: 10
   },
 ];
 

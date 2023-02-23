@@ -125,7 +125,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20% 0 0 0;
+  margin: 20% 0 10vw 0;
   flex-wrap: wrap;
 }
 
@@ -190,6 +190,98 @@ body {
     font-size: 2.5vw;
   }
 }
+.card-image:hover {
+  box-shadow: 0px 2px 10px #98BBFF;
+}
+
+.c0ntact-container {
+  display: flex;
+  font-family: exo,Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 0vw 0 0vw 0;
+}
+
+.c0ntact-container p {
+  margin: 0;
+}
+
+.c0ntact-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #13161C;
+  border-radius: 10px;
+  margin: 0 0 15vw 0 ;
+  padding: 4.5vw 7vw 4.5vw 7vw;
+}
+
+.c0ntact-items-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px ;
+}
+
+
+.mail-icon, .insta-icon, .git-icon {
+  cursor: pointer;
+  transition: all 0.33s;
+  padding: 6px;
+}
+
+.mail-icon:hover, .insta-icon:hover, .git-icon:hover {
+  color:#98BBFF;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+}
+
+@media (max-width: 550px) {
+  .c0ntact-container {
+    padding: 11vw 0 0 0 ;
+    font-size: 6vw;
+  }
+}
+
+.footer-copy {
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  font-size: 15px;
+  padding: 50px;
+}
+
+.footer {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #13161C;
+  padding: 4vw 4vw 4vw 4vw;
+}
+
+.hr-footer {
+    border: 0;
+    height: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.986);
+    border-bottom: 1px solid rgba(255, 251, 251, 0.945);
+    border-radius: 10px;
+}
+
+
 
 /* burger styles */
 .burger-menu-menu {
@@ -200,7 +292,7 @@ body {
 
   font-family: exo, Arial, Helvetica, sans-serif;
   color: white;
-  padding: 10px;
+  padding: 20px;
   margin: 0;
   cursor: pointer;
 }
@@ -385,11 +477,4 @@ text-shadow: 0px 0px 6px #FFFFFF;
     max-width: 85%;
     margin-bottom: 3rem;
   }
-}
-
-.footer {
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
-  font-size: 10px;
-  margin: 10px;
 }

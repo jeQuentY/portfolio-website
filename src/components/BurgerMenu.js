@@ -49,10 +49,10 @@ export default function BurgerMenu(props) {
         </Link>
         <Link
           className="menu-item"
-          to="contact"
+          to="contactz"
           spy={true}
           smooth={true}
-          offset={-100}
+          offset={0}
           duration={200}
         >
           CONTACT
