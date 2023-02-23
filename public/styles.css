@@ -1,0 +1,221 @@
+body {
+    background-color: #171B22;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.body-container {
+  margin-bottom: 100px;
+}
+
+.invisible {
+  opacity: 0;
+}
+/* header */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 76px;
+    background-color: #13161C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    margin-bottom: 100px;
+}
+
+.header-logo {
+    padding: 0px 0 0px 21px;
+    margin: 0;
+    margin-right: auto;
+    cursor: pointer;
+    max-height: 57px;;
+}
+
+.header-container .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container .button-container p {
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 0.185em;
+    margin: 0 38px 0 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header-container .button-container p:hover {
+    font-family: Exo, Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 0.185em;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    text-shadow: 0px 0px 6px #CECECE;
+}
+
+/* main logo // intro page */
+
+.main-container {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main-logo {
+    max-width: 50%;
+    opacity: 1;
+}
+
+.mortii {
+  /*ghetto fix, add 150px to the actual padding you want*/
+  padding-top: 150px;
+  margin: 0;
+}
+
+/* photo card */
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0 0 0;
+  flex-wrap: wrap;
+}
+.card-image {
+  max-width: 30vw;
+  margin: 0 1.3vw 0 1.3vw;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: exo, Arial;
+  text-align: center;
+  font-size: 1.4vw;
+  margin: 0;
+}
+
+.title-box p {
+  margin: 0 0 -1.5vw 0 ;
+  border: solid;
+  border-color: #13161C;
+  border-radius: 8px;
+  background-color: #13161C;
+  padding: 0;
+  width: 60%;
+  height: 60%;
+  z-index: 2;
+}
+
+.card-image,.title-box, .title-box p, .card-container {
+  transition: all 0.3s;
+}
+
+.card-container:hover {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+/* photo card on phone */
+@media (max-width: 550px) {
+  .card-section{
+    margin: 50% 0 0 0;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  .card-image {
+    max-width: 85%;
+    margin-bottom: 3rem;
+  }
+  .title-box {
+    font-size: 2.5vw;
+  }
+}
+
+/* burger styles */
+
+.menu-item {
+  font-family: exo, Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 18px;
+  height: 18px;
+  top: 28px;
+  right: 28px;
+}
+
+@media (max-width: 551px) {
+  .bm-burger-button {
+    display: block;
+  }
+}
+
+.bm-burger-bars {
+  background: #ffffff;
+}
+
+.bm-burger-bars-hover {
+  background: #ffffff;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #ffffff;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+.bm-menu {
+  background: #13161C;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  margin: 0;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0em;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.burger-icon {
+  max-width: 80%;
+  align-items: center;
+  margin: 0 auto 20px auto;
+}
