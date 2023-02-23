@@ -1,8 +1,7 @@
 //import { motion } from "framer-motion"
-
 export default function PortfolioCard(props) {
   return (
-    <div className="card-container" onClick={props.click} id="portfolio">
+    <div className="card-container" onClick={props.onClick} id="portfolio">
       <div className="title-box">
         <p>{props.title}</p>
       </div>

@@ -1,35 +1,16 @@
-import React, { useState } from "react";
-import NavBar from "./components/NavBar.js";
-import MainPage from "./components/MainPage.js";
-import BurgerMenu from "./components/BurgerMenu.js";
-
-// make a new context
-
-const MyContext = React.createContext();
-const MyProvider = (props) => {
-  const [menuOpenState, setMenuOpenState] = useState(false);
-
-  return (
-    <MyContext.Provider
-      value={{
-        isMenuOpen: menuOpenState,
-        toggleMenu: () => setMenuOpenState(!menuOpenState),
-        stateChangeHandler: (newState) => setMenuOpenState(newState.isOpen),
-      }}
-    >
-      {props.children}
-    </MyContext.Provider>
-  );
-};
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Portraits from "./components/Portraits.js";
+import Homepage from "./components/Homepage.js";
 // default export here
 const App = () => {
   return (
-    <MyProvider>
-      <BurgerMenu context={MyContext} />
-      <NavBar />
-      <MainPage />
-    </MyProvider>
+    <>
+      <Routes>
+        <Route path="/portfolio/automotive" element={<Portraits />} />
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </>
   );
 };
 
