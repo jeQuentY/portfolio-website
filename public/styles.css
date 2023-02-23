@@ -277,7 +277,7 @@ body {
   text-align: center;
   font-family: exo,Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 12vh;
+  font-size: 4vw;
   align-items: center;
   text-align: center;
   padding: 18%;
@@ -295,22 +295,22 @@ text-shadow: 0px 0px 6px #FFFFFF;
 
 .gohome {
   cursor: pointer;
-  font-size: 4vh;
+  font-size: 2vw;
 }
 
 @media (max-width: 551px) {
   .gohome {
     cursor: pointer;
-    font-size: 1vh;
+    font-size: 4vw;
   }
   .invalid-page-container {
-    font-size: 4vh;
+    font-size: 7vw;
   }
 }
 
 .custom-header {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -326,15 +326,17 @@ text-shadow: 0px 0px 6px #FFFFFF;
 .custom-header p {
   font-family: exo,Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 5vh;
+  font-size: 3vw;
   letter-spacing: 0.25em;
-  margin-left: 28%;
   text-shadow: 0px 0px 4px #FFFFFF;
 }
 
 .custom-header-logo {
-  height: 80%;
+  position: absolute;
+  height: 75%;
   cursor: pointer;
+  top: 1vw;
+  left: 1.5vw;
 }
 
 @media (max-width:550px) {
@@ -347,9 +349,12 @@ text-shadow: 0px 0px 6px #FFFFFF;
     margin-bottom: 100px;
   }
   .custom-header p {
-    margin-left: 5%;
-    font-size: 3.5vh;
+    font-size: 3.5vw;
     letter-spacing: 0.15em;
+  }
+  .custom-header-logo {
+    top: 1vw;
+    left: 1.5vw;
   }
 }
 
