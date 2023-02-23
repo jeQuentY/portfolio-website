@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioCard from "./PortfolioCard";
-import data from "../database.js";
+import data from "../components/databases/database.js";
 import { Link } from "react-router-dom";
 
 export default function CardSection() {
@@ -27,7 +27,6 @@ export default function CardSection() {
   });
   return (
     <>
-      <div className="mortii"></div>
       <section className="card-section">{photoData}</section>
     </>
   );

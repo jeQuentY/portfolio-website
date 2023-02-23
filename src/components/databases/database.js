@@ -3,7 +3,7 @@ let data = [
     id: 0,
     title: "AUTOMOTIVE",
     imagePath: "../images/QTY_3490.jpg",
-    delay: "0.0",
+    delay: "0",
   },
   {
     id: 1,

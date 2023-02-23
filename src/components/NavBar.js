@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-export default function Header() {
+export default function Header(props) {
   const [windowSize, setWindowSize] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
@@ -15,10 +15,11 @@ export default function Header() {
       window.removeEventListener("resize", handleWindowResize);
     };
   });
+  console.log(props.outside);
 
   return (
     <nav className="header-container">
-      <Link to="homepage" spy={true} smooth={true} offset={-200} duration={200}>
+      <Link to="/" spy={true} smooth={true} offset={-200} duration={200}>
         <img
           className="header-logo"
           src="../images/ca_photography.png"
@@ -26,6 +27,9 @@ export default function Header() {
         />
       </Link>
       <div className={windowSize >= 550 ? "button-container" : "invisible"}>
+        <Link to="about" spy={true} smooth={true} offset={-250} duration={200}>
+          ABOUT
+        </Link>
         <Link
           to="portfolio"
           spy={true}
@@ -35,8 +39,15 @@ export default function Header() {
         >
           PORTFOLIO
         </Link>
-        <a>CONTACT</a>
-        <a>ABOUT</a>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          CONTACT
+        </Link>
       </div>
     </nav>
   );

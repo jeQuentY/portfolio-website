@@ -29,6 +29,16 @@ export default function BurgerMenu(props) {
         <hr />
         <Link
           className="menu-item"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={200}
+        >
+          ABOUT
+        </Link>
+        <Link
+          className="menu-item"
           to="portfolio"
           spy={true}
           smooth={true}
@@ -36,6 +46,16 @@ export default function BurgerMenu(props) {
           duration={200}
         >
           PORTFOLIO
+        </Link>
+        <Link
+          className="menu-item"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={200}
+        >
+          CONTACT
         </Link>
       </Menu>
     </>
