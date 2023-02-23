@@ -1,7 +1,7 @@
-import React, { useState, useContext } from "react";
-import { slide as Menu } from "react-burger-menu";
-import Header from "./components/Header.js";
+import React, { useState } from "react";
+import NavBar from "./components/NavBar.js";
 import MainPage from "./components/MainPage.js";
+import BurgerMenu from "./components/BurgerMenu.js";
 
 // make a new context
 
@@ -22,41 +22,13 @@ const MyProvider = (props) => {
   );
 };
 
-
-const Navigation = () => {
-  const ctx = useContext(MyContext);
-  return (
-    <>
-      <Menu
-        customBurgerIcon={false}
-        isOpen={ctx.isMenuOpen}
-        onStateChange={(state) => ctx.stateChangeHandler(state)}
-      />
-        <Menu right className="burger-menu-menu">
-            <img className="burger-icon" src="../images/ca_photography.png" alt="burger-menu icon"/>
-            <hr/>
-            <p id="portfolio" className="menu-item">
-              PORTFOLIO
-            </p>
-            <p id="contact" className="menu-item">
-              CONTACT
-            </p>
-            <p id="about" className="menu-item">
-              ABOUT
-            </p>
-        </Menu>
-    </>
-  );
-};
-
 // default export here
 const App = () => {
   return (
-    
     <MyProvider>
-        <Navigation />
-        <Header />
-        <MainPage />
+      <BurgerMenu context={MyContext} />
+      <NavBar />
+      <MainPage />
     </MyProvider>
   );
 };
